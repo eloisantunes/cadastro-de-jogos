@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Jogos</title>
+    <script>
+
+
+        let exibir = document.getElementById("btn_exibir");
+        let cadastrar = document.getElementById("btn_cadastrar");
+        let atualizar = document.getElementById("btn_atualizar");
+        let apagar = document.getElementById("btn_apagar");
+
+        function validarId() {
+            let idJogo = document.getElementById("idJogo").value;
+            if (onclick.getElementById("exibir").idJogo.value == '') {
+                alert("Precisa preencher o campo ID")
+            } else {
+                alert("Você clicou em EXIBIR")
+            };
+        };
+
+        function validarNome() {
+            let nomeJogo = document.getElementById("nome-jogo").value;
+            if (onclick.getElementById("cadastrar").nomeJogo.value == '') {
+                alert("Existem campos vazios")
+            } else {
+                alert("Você clicou em CADASTRAR")
+            };
+        };
+
+        function validarTipo() {
+            let tipoJogo = document.getElementById("tipo-jogo").value;
+            if (onclick.getElementById("atualizar").tipoJogo.value == '') {
+                alert("Existem campos vazios")
+            } else {
+                alert("Você clicou em ATUALIZAR")
+            };
+        };
+
+        function validarEmpresa() {
+            let empresaJogo = document.getElementById("empresa-jogo").value;
+            if (onclick.getElementById("apagar").empresaJogo.value == '') {
+                alert("Precisa preencher o campo ID")
+            } else {
+                alert("Você clicou em APAGAR")
+            };
+        };
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="db-games">
+        <form action="">
+            <label class="id-jogo">ID:</label><input type="number">
+            <label class="nome-jogo">NOME DO JOGO:</label><input type="text">
+            <label class="tipo-jogo">TIPO:</label><input type="text">
+            <label class="empresa-jogo">EMPRESA DESENVOLVEDORA:</label><input type="text">
+
+            <div class="btn-box">
+                <button class="common-btn" id="btn_exibir" onclick="exibir()">EXIBIR</button>
+                <button class="common-btn" id="btn_cadastrar" onclick="cadastrar()">CADASTRAR</button>
+                <button class="common-btn" id="btn_atualizar" onclick="atualizar()">ATUALIZAR</button>
+                <button class="common-btn" id="btn_apagar" onclick="apagar()">APAGAR</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
